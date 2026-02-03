@@ -1,0 +1,189 @@
+WEBSITE GENERATION PROMPT
+
+Objective
+Create a modern, elegant cake bakery website inspired by the UI design shown in ui.jpg. The site should feel soft, premium, and friendly, with a pink-and-white color palette, rounded shapes, and food-focused visuals.
+
+Tech Stack
+
+HTML5 for structure
+
+CSS3 (no frameworks) for layout, styling, and animations
+
+Vanilla JavaScript for interactions and micro-animations
+
+Responsive design (desktop, tablet, mobile)
+
+Design & Style Guidelines
+
+Color palette:
+
+Soft pink (#FADADD / similar tones)
+
+White backgrounds
+
+Accent color: deep pink or berry red for buttons
+
+Typography:
+
+Clean rounded sans-serif (e.g., Poppins / Nunito style)
+
+Headings bold, body text light
+
+Layout:
+
+Generous spacing
+
+Rounded cards
+
+Soft shadows
+
+Curved section dividers similar to the inspiration UI
+
+Page Sections (Required)
+1. Hero / Main Section
+
+Large cake image on the right (use image from /assets)
+
+Text on the left:
+
+Main heading (healthy / premium cakes)
+
+Short descriptive paragraph
+
+Primary CTA button (“View Menu”)
+
+Subtle floating animations:
+
+Small berries or leaves gently drifting
+
+Hero image slightly floating (CSS transform + animation)
+
+2. Features Section
+
+3–4 feature icons with text (e.g. healthy, natural ingredients, low sugar)
+
+Icons animate on hover:
+
+Scale slightly
+
+Soft glow or color shift
+
+3. Product Showcase
+
+Grid of cake cards (3–4 items)
+
+Each card includes:
+
+Cake image (from /assets)
+
+Name
+
+Short description
+
+Price
+
+“Buy” button
+
+Micro-animations:
+
+Card lifts on hover
+
+Button ripple or gradient slide effect
+
+4. Ingredients / Story Section
+
+Large centered cake image
+
+Surrounding ingredient labels/icons
+
+Fade-in animation on scroll
+
+Gentle parallax movement on the main image
+
+5. Quotation / Custom Order Section (IMPORTANT)
+
+Section title: “Request a Custom Cake Quote”
+
+Form fields:
+
+Full Name
+
+Email
+
+Phone Number
+
+Event Date
+
+Cake Type / Flavor
+
+Message (custom instructions)
+
+Submit button with:
+
+Loading animation
+
+Success micro-feedback (checkmark or message)
+
+JavaScript:
+
+Basic form validation
+
+Prevent empty submission
+
+Simulated submit success (no backend)
+
+6. Footer
+
+Logo
+
+Quick links
+
+Social icons
+
+Smooth hover transitions
+
+Animations & Interactions
+
+Use CSS keyframes for:
+
+Floating elements
+
+Button hover effects
+
+Use Intersection Observer (JS) for:
+
+Fade-in on scroll
+
+Use CSS transitions for micro-interactions:
+
+Buttons
+
+Cards
+
+Inputs focus states
+
+Assets Usage
+
+Use images from /assets folder for:
+
+Cakes
+
+Decorative berries/leaves
+
+Reference images properly in HTML/CSS (no external URLs)
+
+Code Quality Requirements
+
+Clean, well-commented code
+
+Separate files:
+
+index.html
+
+styles.css
+
+script.js
+
+Semantic HTML
+
+Smooth performance (no heavy libraries)
