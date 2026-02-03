@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const submitBtn = document.querySelector('.btn-submit');
     const loader = document.querySelector('.loader');
     const btnText = document.querySelector('.btn-text');
-    const WHATSAPP_NUMBER = "0779570683"; // REPLACE WITH ACTUAL NUMBER
+    const WHATSAPP_NUMBER = "+263779570683"; // REPLACE WITH ACTUAL NUMBER
 
     if (form) {
         form.addEventListener('submit', (e) => {
