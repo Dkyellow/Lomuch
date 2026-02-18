@@ -46,7 +46,9 @@ ul {
 }
 
 /* Typography */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-weight: 700;
     margin-bottom: 1rem;
     color: var(--text-dark);
@@ -84,7 +86,9 @@ p {
 }
 
 /* Buttons */
-.btn-primary, .btn-submit, .btn-nav {
+.btn-primary,
+.btn-submit,
+.btn-nav {
     display: inline-block;
     background-color: var(--accent-red);
     color: var(--white);
@@ -97,7 +101,9 @@ p {
     box-shadow: 0 4px 15px rgba(216, 27, 96, 0.3);
 }
 
-.btn-primary:hover, .btn-submit:hover, .btn-nav:hover {
+.btn-primary:hover,
+.btn-submit:hover,
+.btn-nav:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(216, 27, 96, 0.4);
     background-color: #C2185B;
@@ -198,7 +204,7 @@ p {
 .main-cake {
     width: 80%;
     max-width: 500px;
-    border-radius: 50% 50% 45% 45%; 
+    border-radius: 50% 50% 45% 45%;
     /* Slightly organic rounded shape */
     box-shadow: var(--shadow);
     animation: float 6s ease-in-out infinite;
@@ -227,9 +233,17 @@ p {
 }
 
 @keyframes float {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
-    100% { transform: translateY(0); }
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 /* Features Section */
@@ -325,7 +339,8 @@ p {
     padding: 5rem 5%;
     background-color: var(--soft-pink);
     border-radius: 0 0 50px 50px;
-    overflow: hidden; /* Ensure buttons don't spill */
+    overflow: hidden;
+    /* Ensure buttons don't spill */
 }
 
 .carousel-wrapper {
@@ -337,15 +352,18 @@ p {
 
 .carousel-viewport {
     overflow: hidden;
-    padding: 20px 0; /* Space for shadows */
-    margin: 0 -20px; /* Counteract padding on sides if needed, or just leave it */
+    padding: 20px 0;
+    /* Space for shadows */
+    margin: 0 -20px;
+    /* Counteract padding on sides if needed, or just leave it */
 }
 
 .carousel-track {
     display: flex;
     gap: 2rem;
     transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
-    width: max-content; /* Ensure it stretches */
+    width: max-content;
+    /* Ensure it stretches */
     padding: 0 20px;
 }
 
@@ -357,7 +375,8 @@ p {
     overflow: hidden;
     box-shadow: var(--shadow);
     transition: var(--transition);
-    flex: 0 0 auto; /* Don't shrink */
+    flex: 0 0 auto;
+    /* Don't shrink */
 }
 
 .product-card:hover {
@@ -407,7 +426,7 @@ p {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     z-index: 10;
     color: var(--accent-red);
@@ -447,7 +466,7 @@ p {
     justify-content: center;
     align-items: center;
     font-size: 35px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     z-index: 1001;
     transition: var(--transition);
 }
@@ -502,23 +521,80 @@ p {
     transform: translateY(0);
 }
 
-.label-1 { top: 10%; right: -10px; transition-delay: 0.2s; }
-.label-2 { bottom: 20%; left: 0; transition-delay: 0.4s; }
-.label-3 { top: 50%; right: -20px; transition-delay: 0.6s; }
+.label-1 {
+    top: 10%;
+    right: -10px;
+    transition-delay: 0.2s;
+}
+
+.label-2 {
+    bottom: 20%;
+    left: 0;
+    transition-delay: 0.4s;
+}
+
+.label-3 {
+    top: 50%;
+    right: -20px;
+    transition-delay: 0.6s;
+}
 
 .story-text {
     flex: 1;
 }
 
-/* Quotation Form */
-.quotation {
+/* Contact Section */
+.contact-section {
     padding: 5rem 5%;
     background: linear-gradient(135deg, var(--soft-pink) 0%, #fff 100%);
 }
 
-.form-container {
-    max-width: 800px;
+.contact-container {
+    max-width: 1100px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.contact-info h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.info-item {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    align-items: flex-start;
+}
+
+.info-icon {
+    width: 50px;
+    height: 50px;
+    background-color: var(--accent-red);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    box-shadow: 0 5px 15px rgba(216, 27, 96, 0.2);
+}
+
+.info-text h4 {
+    margin-bottom: 0.3rem;
+    font-size: 1.1rem;
+}
+
+.info-text p {
+    margin-bottom: 0;
+    font-size: 0.95rem;
+}
+
+.form-container {
     background: var(--white);
     padding: 3rem;
     border-radius: var(--radius-lg);
@@ -546,7 +622,9 @@ label {
     color: var(--text-dark);
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
     padding: 12px 15px;
     border: 1px solid #ddd;
     border-radius: var(--radius-md);
@@ -554,7 +632,9 @@ input, select, textarea {
     transition: border-color 0.3s;
 }
 
-input:focus, select:focus, textarea:focus {
+input:focus,
+select:focus,
+textarea:focus {
     outline: none;
     border-color: var(--accent-red);
 }
@@ -576,8 +656,13 @@ input:focus, select:focus, textarea:focus {
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .feedback-msg {
@@ -590,6 +675,7 @@ input:focus, select:focus, textarea:focus {
 .feedback-msg.success {
     color: green;
 }
+
 .feedback-msg.error {
     color: red;
 }
@@ -605,7 +691,7 @@ input:focus, select:focus, textarea:focus {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     padding-bottom: 3rem;
     margin-bottom: 2rem;
 }
@@ -650,7 +736,8 @@ input:focus, select:focus, textarea:focus {
     }
 
     .nav-links {
-        display: none; /* Mobile menu implementation later if needed, simple hide for now */
+        display: none;
+        /* Mobile menu implementation later if needed, simple hide for now */
         position: absolute;
         top: 100%;
         left: 0;
@@ -658,9 +745,9 @@ input:focus, select:focus, textarea:focus {
         background: var(--white);
         flex-direction: column;
         padding: 2rem;
-        box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     }
-    
+
     .nav-links.active {
         display: flex;
     }
@@ -682,19 +769,19 @@ input:focus, select:focus, textarea:focus {
     .hero-content h1 {
         font-size: 2.5rem;
     }
-    
+
     .product-card {
         min-width: 260px;
         max-width: 260px;
     }
-    
+
     .carousel-btn {
         width: 40px;
         height: 40px;
         font-size: 1rem;
         background: rgba(255, 255, 255, 0.9);
     }
-    
+
     .whatsapp-fab {
         width: 50px;
         height: 50px;
@@ -703,8 +790,14 @@ input:focus, select:focus, textarea:focus {
         right: 20px;
     }
 
-    .story-container {
+    .story-container,
+    .contact-container {
         flex-direction: column;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
     }
 
     #quoteForm {
